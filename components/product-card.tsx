@@ -5,7 +5,7 @@ import { Minus, Plus } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { useCartStore, CartItem } from "@/lib/cart"
 
-interface ProductCardProps extends CartItem {}
+type ProductCardProps = CartItem
 
 export function ProductCard({ id, image, title, price, address, seller, quantity }: ProductCardProps) {
   const updateQuantity = useCartStore((state) => state.updateQuantity)

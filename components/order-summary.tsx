@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button"
 import { useCartStore } from "@/lib/cart"
 
 export function OrderSummary() {
-  const items = useCartStore((state) => state.items)
   const getTotal = useCartStore((state) => state.getTotal)
 
   const subtotal = getTotal()
